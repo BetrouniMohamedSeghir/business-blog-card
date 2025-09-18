@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #F2F5FA;
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    color: rgb(55, 65, 81);
+    text-decoration: underline;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30vw;
+    margin: 0 auto;
+    background-color: #BAB3A5;
+    border-radius: 10px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+}
+
+.card-content p::first-letter {
+    font-size: 1.5rem;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas: 'avatarArea nameArea nameArea' 
+    'avatarArea pArea pArea';
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.personal-info img {
+    grid-area: avatarArea;
+    align-self: center;
+    border-radius: 50%;
+}
+
+.personal-info h3 {
+    grid-area: nameArea;
+    font-size: 1.5rem;
+}
+
+.personal-info p {
+    grid-area: pArea;
+    font-size: 1rem;
+}
