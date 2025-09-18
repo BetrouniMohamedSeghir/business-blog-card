@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30vw;
+    width: max(30vw, 400px);
     margin: 0 auto;
     background-color: #BAB3A5;
     border-radius: 10px;
@@ -57,7 +57,8 @@ body {
 .personal-info {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
-    grid-template-areas: 'avatarArea nameArea nameArea' 
+    grid-template-areas:
+    'avatarArea nameArea nameArea' 
     'avatarArea pArea pArea';
     gap: 5px;
     margin-top: 10px;
